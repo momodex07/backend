@@ -12,17 +12,13 @@ const DbUrl="mongodb+srv://momodex:root@cluster0.tc6xq.mongodb.net/filmsDB?retry
 mongoose.connect(DbUrl, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('Connexion à MongoDB réussie'))
   .catch(err => console.log('Erreur de connexion à MongoDB :', err));
-// Connexion à MongoDB Atlas
-/*mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => console.log('Connexion à MongoDB réussie'))
-  .catch(err => console.log('Erreur de connexion à MongoDB :', err));
-*/
+
 // Middleware
 app.use(cors()); // Autorise toutes les origines par défaut
 app.use(bodyParser.json());
 
 const corsOptions = {
-    origin: 'http://localhost:3001', // Origine autorisée
+    origin: 'https://67783fc22be41c000897c667--gilded-mochi-6104ee.netlify.app', // Origine autorisée
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     allowedHeaders: ['Content-Type', 'Authorization']
   };
