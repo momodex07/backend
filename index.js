@@ -8,17 +8,21 @@ require('dotenv').config();
 const app = express();
 app.use(bodyParser.json());
 
-// Connexion à MongoDB Atlas
-mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+const DbUrl="mongodb+srv://momodex:root@cluster0.tc6xq.mongodb.net/filmsDB?retryWrites=true&w=majority";
+mongoose.connect(DbUrl, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('Connexion à MongoDB réussie'))
   .catch(err => console.log('Erreur de connexion à MongoDB :', err));
-
+// Connexion à MongoDB Atlas
+/*mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => console.log('Connexion à MongoDB réussie'))
+  .catch(err => console.log('Erreur de connexion à MongoDB :', err));
+*/
 // Middleware
 app.use(cors()); // Autorise toutes les origines par défaut
 app.use(bodyParser.json());
 
 const corsOptions = {
-    origin: 'https://gilded-mochi-6104ee.netlify.app/', // Origine autorisée
+    origin: 'http://localhost:3001', // Origine autorisée
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     allowedHeaders: ['Content-Type', 'Authorization']
   };
