@@ -18,7 +18,7 @@ app.use(cors()); // Autorise toutes les origines par défaut
 app.use(bodyParser.json());
 
 const corsOptions = {
-    origin: 'http://localhost:3001', // Origine autorisée
+    origin: 'https://gilded-mochi-6104ee.netlify.app/', // Origine autorisée
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     allowedHeaders: ['Content-Type', 'Authorization']
   };
