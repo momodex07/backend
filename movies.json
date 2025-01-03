@@ -1,0 +1,38 @@
+[
+    {
+      "titre": "Inception",
+      "annee": 2010,
+      "genre": "Science-fiction",
+      "realisateur": "Christopher Nolan",
+      "synopsis": "Un voleur pénètre dans les rêves pour voler des secrets."
+    },
+    {
+      "titre": "The Matrix",
+      "annee": 1999,
+      "genre": "Action",
+      "realisateur": "Lana Wachowski, Lilly Wachowski",
+      "synopsis": "Un hacker découvre une réalité virtuelle contrôlée par des machines."
+    },
+    {
+      "titre": "Interstellar",
+      "annee": 2014,
+      "genre": "Science-fiction",
+      "realisateur": "Christopher Nolan",
+      "synopsis": "Un groupe d'astronautes part à la recherche d'une nouvelle planète habitable."
+    },
+    {
+      "titre": "Parasite",
+      "annee": 2019,
+      "genre": "Drame",
+      "realisateur": "Bong Joon-ho",
+      "synopsis": "Une famille pauvre infiltre la maison d'une famille riche en se faisant passer pour des experts."
+    },
+    {
+      "titre": "The Godfather",
+      "annee": 1972,
+      "genre": "Drame",
+      "realisateur": "Francis Ford Coppola",
+      "synopsis": "L'histoire de la famille mafieuse Corleone dans l'Amérique des années 1940."
+    }
+  ]
+  
